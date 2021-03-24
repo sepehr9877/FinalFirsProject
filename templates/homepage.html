@@ -1,0 +1,53 @@
+{% load static %}
+{%load render_partial %}
+<!DOCTYPE html>
+<!--
+Template Name: Miraculous - Online Music Store Html Template
+Version: 1.0.0
+Author: 3mad
+Website:
+Purchase:
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Begin Head -->
+
+<head>
+    <title>Miraculous - فروش آنلاین موزیک</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Music">
+    <meta name="keywords" content="">
+    <meta name="author" content="kamleshyadav">
+    <meta name="MobileOptimized" content="320">
+    <!--Start Style -->
+    {% include "shared/HeaderRefrence.html" %}
+</head>
+
+<body>
+	<!----Loader Start---->
+	<div class="ms_loader">
+		<div class="wrap">
+		  <img src="{% static "images/loader.gif" %}" alt="">
+		</div>
+	</div>
+    <!----Main Wrapper Start---->
+    {% render_partial "MainWrapperStart" %}
+    <!----Register Modal Start---->
+    <!-- Modal -->
+
+
+    <!----Language Selection Modal---->
+    {% include "shared/LanguageSection.html" %}
+	<!----Queue Clear Model ---->
+	{% include "shared/ClearModel.html" %}
+	<!----Queue Save Modal---->
+	{% include "shared/Footer.html" %}
+    <!--Main js file Style-->
+    {% include "shared/FooterRefrence.html" %}
+</body>
+
+</html>

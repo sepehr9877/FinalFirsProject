@@ -1,0 +1,46 @@
+
+
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id02').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+
+      <div class="w3-container">
+          {% for playlist in Playlists %}
+        <img src="{{ playlist.PlayListImage.url }}" style="width: 100px;">
+        <p>{{ playlist.PlayListName.title }}</p>
+              <p><a  id="{{ playlist.id }}"onclick="add_to_playlist('{{ playlist.id }}','{{  playlist.PlayListName.title }}')"  class="w3-button w3-black" >ADD</a></p>
+
+          {% endfor %}<br>
+      <p id="idp2"style="text-align: center; color: #1b2039;border: #1b2039">Or Your Can Just Create New PlayList</p>
+        <p style="text-align: center;color: #0b2e13"><a  >Click Here</a></p>
+      </div>
+
+      <footer class="w3-container w3-teal">
+        <p>Choose</p>
+      </footer>
+    </div>
+  </div>
+
+
+<script>
+    var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+
+  }
+}
+function set_id_from_playlist(songid) {
+    document.getElementById('idp2').setAttribute('title',songid)
+}
+function add_to_playlist(id_link,playlist_name) {
+    var songid=document.getElementById('idp2').title
+    document.getElementById(id_link).href="/Add_Song_From_Playlist"+"/"+songid+"/"+id_link
+}
+</script>

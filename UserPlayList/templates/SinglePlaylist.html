@@ -1,0 +1,303 @@
+{% load  static %}
+{% load render_partial %}
+
+<!DOCTYPE html>
+<!--
+Template Name: Miraculous - Online Music Store Html Template
+Version: 1.0.0
+Author: 3mad
+Website:
+Purchase:
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Begin Head -->
+
+<head>
+    <title>Miraculous - فروش آنلاین موزیک</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Music">
+    <meta name="keywords" content="">
+    <meta name="author" content="kamleshyadav">
+    <meta name="MobileOptimized" content="320">
+    <!--Start Style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <style>
+        {% include "modalstyle.css" %}
+</style>
+    {% include "shared/HeaderRefrence.html" %}
+</head>
+<body>
+	<!----Loader---->
+	<div class="ms_inner_loader">
+		<div class="ms_loader">
+			<div class="ms_bars">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</div>
+	</div>
+    <!----Main Wrapper Start---->
+    <div class="ms_main_wrapper">
+        <!---Header--->
+         <div class="ms_header">
+                <div class="ms_top_left">
+                    <form action="/Search" method="get">
+                    <div class="ms_top_search">
+                        <input name="q" value="{{ request.get.q}}"  type="text" class="form-control" placeholder="Search....">
+                        <span class="search_icon">
+                            <button type="submit" class="search_icon" >search</button>
+						</span>
+                    </div>
+                    </form>
+                    <div class="ms_top_trend">
+                        <span><a href="/TopSong"  class="ms_color">آهنگ های پربازدید :</a></span> <span class="top_marquee"><a href="#">Dream your moments</a></span>
+                    </div>
+                </div>
+                {% render_partial "profiledetail" %}
+            </div>
+        <!---Side Menu Start--->
+         <div class="ms_sidemenu_wrapper">
+            <div class="ms_nav_close">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="ms_sidemenu_inner">
+                <div class="ms_logo_inner">
+                    <div class="ms_logo">
+                        <a href="/"><img src="{% static "images/logo.png" %}" alt="" class="img-fluid"/></a>
+                    </div>
+                    <div class="ms_logo_open">
+                        <a href="/"><img src="{% static "images/open_logo.png" %}" alt="" class="img-fluid"/></a>
+                    </div>
+                </div>
+                <div class="ms_nav_wrapper">
+                    <ul>
+                        <li><a href="/"  title="Home">
+						<span class="nav_icon">
+							<span class="icon icon_discover"></span>
+						</span>
+						<span class="nav_text">
+							Home
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/Albums" title="Albums">
+						<span class="nav_icon">
+							<span class="icon icon_albums"></span>
+						</span>
+						<span class="nav_text">
+                            Albums
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/artists"  title="Artists">
+						<span class="nav_icon">
+							<span class="icon icon_artists"></span>
+						</span>
+						<span class="nav_text">
+							Artists
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/Genre" class="active" title="Genre">
+						<span class="nav_icon">
+							<span class="icon icon_genres"></span>
+						</span>
+						<span class="nav_text">
+							Genres
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/TopSong" title="TopSongs">
+						<span class="nav_icon">
+							<span class="icon icon_tracks"></span>
+						</span>
+						<span class="nav_text">
+							TopSongsا
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/offeredsong" title="dialy offered">
+						<span class="nav_icon">
+							<span class="icon icon_music"></span>
+						</span>
+						<span class="nav_text">
+							Daily Offered
+						</span>
+                        </a>
+                        </li>
+
+                        </li>
+                    </ul>
+                    <ul class="nav_downloads">
+                        <li><a href="/Downloads" title="Downloads">
+						<span class="nav_icon">
+							<span class="icon icon_download"></span>
+						</span>
+						<span class="nav_text">
+							Downloadsا
+						</span>
+                        </a>
+                        </li>
+
+                        </li>
+                        <li><a href="/Favorit" title="Favorit">
+						<span class="nav_icon">
+							<span class="icon icon_favourite"></span>
+						</span>
+						<span class="nav_text">
+							Favorit
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/History" title="History">
+						<span class="nav_icon">
+							<span class="icon icon_history"></span>
+						</span>
+						<span class="nav_text">
+							History
+						</span>
+                        </a>
+                        </li>
+                    </ul>
+                    <ul class="nav_playlist">
+                        <li><a href="/Playlist" title=Playlists">
+						<span class="nav_icon">
+							<span class="icon icon_fe_playlist"></span>
+						</span>
+                        <span class="nav_text">
+                            Playlists
+                        </span>
+                        </a>
+                        </li>
+                        <li><a href="/AddPlayList" title="CreatePlaylist">
+						<span class="nav_icon">
+							<span class="icon icon_c_playlist"></span>
+						</span>
+						<span class="nav_text">
+                            CreatePlaylist
+                        </span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----Album Single Section Start---->
+
+        <div class="ms_album_single_wrapper ms_artist_single">
+            <div class="album_single_data">
+                <div class="album_single_img">
+                    <img src="{{selected_plalists.PlayListSelect.PlayListImage.url}}" alt="" class="img-fluid">
+                </div>
+                <div class="album_single_text">
+                    <h2>{{ selected_plalists.PlayListSelect.PlayListName}}</h2>
+                    <p class="singer_name">خواننده، نیویورک</p>
+                    <div class="about_artist">
+                        This Playlist Has Been Created By {{ selected_plalists.UserPlayList }}
+                    </div>
+                </div>
+                <div class="album_more_optn ms_more_icon">
+                    <span><img src="{% static "images/svg/more.svg" %}" alt=""></span>
+                </div>
+                <ul class="more_option">
+                    <li><a href="/AddToPlaylList/{{ selected_plalists.PlayListSelect.id }}"><span class="opt_icon"><span class="icon icon_playlst"></span></span>افزودن به پلی لیست</a></li>
+
+                    {% if not following %}
+                    <li><a href="/Subscribe_touser/{{ playlistid }}"><span class="opt_icon"><span class="fa fa-bell"></span></span>Subscribe</a></li>
+                    {% endif %}
+                    {% if  following %}
+                        {% if  not accept %}
+                             <li>Request Sent</li>
+                        {% else %}
+                            <li>following</li>
+                        {% endif %}
+                    {% endif %}
+                </ul>
+            </div>
+            <!----Song List---->
+			<div class="album_inner_list">
+				<div class="album_list_wrapper">
+					<ul class="album_list_name">
+
+						<li>MusicName</li>
+						<li>ArtistName</li>
+						<li class="text-center">اAlbumName</li>
+                        <li class="text-center">Add To Favorit </li>
+                        <li class="text-center">play</li>
+
+					</ul>
+                    {% for Song in selected_song %}
+					<ul>
+
+						<li><a href="">{{ Song.SongName }}</a></li>
+						<li><a href="">{{ Song.ArtistName }}</a></li>
+						<li class="text-center">{{ Song.AlbumName }}</li>
+                        {% if not Song.is_paid %}
+                            {% if Song.is_favorit %}
+                                 <li >Buy From Website</li>
+                                <li class="text-center">Buy From Website</li>
+                            {% else %}
+                        <li ><a  name="{{ Song.musicname.id }}" id="linknew"onclick="document.getElementById('id02').style.display='block';set_id_from_playlist('{{  Song.id  }}')" class="w3-button w3-black ">Add To Playlist</a></li>
+                        <li class="text-center"><a href="{{ Song.SongFile.url }}" ><span class="song_optn_icon" ><i class="fa fa-play" ></i></span></a></li>
+                        {% endif %}
+                    {% endif %}
+                        {% if Song.is_paid %}
+                            {% if following %}
+                                {% if accept %}
+                               <li ><a  name="{{ Song.musicname.id }}" id="linknew"onclick="document.getElementById('id02').style.display='block';set_id_from_playlist('{{  Song.id  }}')" class="w3-button w3-black ">Add To Playlist</a></li>
+                               <li class="text-center"><a href="{{ Song.SongFile.url }}" ><span class="song_optn_icon" ><i class="fa fa-play" ></i></span></a></li>
+                                {% endif %}
+                            {% else %}
+                                <li class="text-center">HIDDEN BY USER</li>
+                                <li class="text-center">HIDDEN BY USER</li>
+                            {% endif %}
+
+                        {% endif %}
+					</ul>
+                    {% endfor %}
+{% render_partial "modal_playlist" %}
+				</div>
+			</div>
+{#			<div class="ms_view_more padder_bottom20">#}
+{#				<a href="#" class="ms_btn">مشاهده بیشتر</a>#}
+{#			</div>#}
+        </div>
+
+
+        <!---Main Content Start--->
+
+        <!----Footer Start---->
+        {% render_partial "footerwrapper" %}
+        <!----Audio Player Section---->
+        {
+    {% if musicfile is not None %}
+    {% include "AutoPlayerSection.html" with musicfile=musicfile %}
+    {% endif %}
+    </div>
+    <!----Register Modal Start---->
+    <!-- Modal -->
+    <!----Language Selection Modal---->
+    {% include "shared/LanguageSection.html" %}
+    <!----Queue Clear Model ---->
+    <{% include "shared/ClearModel.html" %}
+    <!----Queue Save Modal---->
+    {% include "shared/Footer.html" %}
+    <!--Main js file Style-->
+    <{% include "shared/FooterRefrence.html" %}
+</body>
+</html>

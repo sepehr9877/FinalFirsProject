@@ -1,0 +1,61 @@
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span  onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+
+      <div  class="w3-container">
+          {% for playlist in Playlists %}
+        <img src="{{ playlist.PlayListImage.url }}" style="width: 100px;">
+        <p>{{ playlist.PlayListName.title }}</p>
+              <li ><a id="{{ playlist.id }}" name="{{  playlist.PlayListName.title }}"onclick="get_id('{{ playlist.id }}','{{ playlist.PlayListName.title }}')" class="w3-button w3-black">ADD</a></li>
+
+          {% endfor %}<br>
+      <p id="idp" style="text-align: center; color: #1b2039;border: #1b2039">Or Your Can Just Create New PlayList</p>
+      </div>
+
+      <footer class="w3-container w3-teal">
+        <p>Choose</p>
+      </footer>
+    </div>
+  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+
+  }
+}
+
+
+
+function set_id(value) {
+    document.getElementById('idp').setAttribute('title',value)}
+
+
+
+function myfunc3(new__name) {
+   myfunc(new__name)
+}
+function get_id(valueid,namevalue) {
+    idselect= document.getElementById('idp').title
+    document.getElementById(valueid).href="/Add_Song_From_Favorit/"+ idselect+"/"+valueid
+}
+function myfunc2() {
+   document.getElementById('id01').style.display='none'
+    document.getElementById('id02').style.display='block'
+
+}
+
+function myfunc(val) {
+    document.getElementById('link1').href= "/Add_Song_From_Favorit/"+ val
+ }
+</script>

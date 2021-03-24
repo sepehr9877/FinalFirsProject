@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56717d91-0a9f-4296-9f1c-fc88c9bce0a5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="UserPlayList_playlistdetail: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MusicWebsite" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oBqfYSxJ2B4EfuwNvsesvdJbOu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MusicWebsite\static_cdn\media_root\user" />
+      <recent name="D:\MusicWebsite\Favorit\templates" />
+      <recent name="D:\MusicWebsite\Album\templates" />
+      <recent name="D:\MusicWebsite\UserPlayList\templates" />
+      <recent name="D:\MusicWebsite\download\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MusicWebsite\assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MusicWebsite" type="Python.DjangoServer" factoryName="Django server">
+      <module name="MusicWebsite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="MusicWebsite.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56717d91-0a9f-4296-9f1c-fc88c9bce0a5" name="Default Changelist" comment="" />
+      <created>1612770434765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612770434765</updated>
+      <workItem from="1612770436870" duration="12123000" />
+      <workItem from="1612789723425" duration="7796000" />
+      <workItem from="1612799968128" duration="10247000" />
+      <workItem from="1612860226253" duration="17812000" />
+      <workItem from="1612958279000" duration="9702000" />
+      <workItem from="1613028151458" duration="1794000" />
+      <workItem from="1613050205587" duration="4995000" />
+      <workItem from="1613146762037" duration="9439000" />
+      <workItem from="1613197668761" duration="26785000" />
+      <workItem from="1613231149147" duration="958000" />
+      <workItem from="1613242000892" duration="5462000" />
+      <workItem from="1613284859779" duration="11241000" />
+      <workItem from="1613309888824" duration="15749000" />
+      <workItem from="1613374001565" duration="7806000" />
+      <workItem from="1613413151556" duration="6613000" />
+      <workItem from="1613480277719" duration="21547000" />
+      <workItem from="1613547668761" duration="6663000" />
+      <workItem from="1613581164660" duration="7559000" />
+      <workItem from="1613808127112" duration="10107000" />
+      <workItem from="1613837109112" duration="10517000" />
+      <workItem from="1613891871111" duration="9271000" />
+      <workItem from="1613914835918" duration="11827000" />
+      <workItem from="1613992691790" duration="3247000" />
+      <workItem from="1614004001986" duration="2450000" />
+      <workItem from="1614067161631" duration="292000" />
+      <workItem from="1614067508744" duration="6488000" />
+      <workItem from="1614101657498" duration="6304000" />
+      <workItem from="1614157594313" duration="7262000" />
+      <workItem from="1614186384674" duration="7746000" />
+      <workItem from="1614357074537" duration="9052000" />
+      <workItem from="1614409735524" duration="8431000" />
+      <workItem from="1614432365150" duration="15419000" />
+      <workItem from="1614519795405" duration="19163000" />
+      <workItem from="1614621556057" duration="5694000" />
+      <workItem from="1614667388230" duration="19252000" />
+      <workItem from="1614705508529" duration="5385000" />
+      <workItem from="1614783231131" duration="15241000" />
+      <workItem from="1614864851953" duration="17582000" />
+      <workItem from="1614929793036" duration="4722000" />
+      <workItem from="1614965366974" duration="9745000" />
+      <workItem from="1615047678072" duration="9076000" />
+      <workItem from="1615109994363" duration="10107000" />
+      <workItem from="1615141159056" duration="5443000" />
+      <workItem from="1615207300038" duration="11962000" />
+      <workItem from="1615228162365" duration="3352000" />
+      <workItem from="1615274962189" duration="16108000" />
+      <workItem from="1615358571178" duration="12780000" />
+      <workItem from="1615384321715" duration="11625000" />
+      <workItem from="1615477862200" duration="14830000" />
+      <workItem from="1615534864771" duration="14573000" />
+      <workItem from="1615559365641" duration="7614000" />
+      <workItem from="1615621126689" duration="9243000" />
+      <workItem from="1615642476869" duration="6158000" />
+      <workItem from="1615654654780" duration="10204000" />
+      <workItem from="1615711912135" duration="21078000" />
+      <workItem from="1615817324622" duration="5206000" />
+      <workItem from="1615824094214" duration="13600000" />
+      <workItem from="1615905199373" duration="17268000" />
+      <workItem from="1615967409467" duration="12062000" />
+      <workItem from="1615992610095" duration="1756000" />
+      <workItem from="1616001955107" duration="106000" />
+      <workItem from="1616002665686" duration="1055000" />
+      <workItem from="1616003738787" duration="98000" />
+      <workItem from="1616003961294" duration="101000" />
+      <workItem from="1616004270792" duration="439000" />
+      <workItem from="1616004915183" duration="2892000" />
+      <workItem from="1616073156245" duration="1486000" />
+      <workItem from="1616570594559" duration="133000" />
+      <workItem from="1616570738042" duration="637000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="289" y="148" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613924820336">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="289" y="148" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.689@0.0.1280.689" timestamp="1613924820336" />
+    <state x="566" y="91" key="FileChooserDialogImpl" timestamp="1616570727455">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="566" y="91" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1616570727455" />
+    <state width="1237" height="183" key="GridCell.Tab.0.bottom" timestamp="1616571379580">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="183" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1616571379580" />
+    <state width="1237" height="183" key="GridCell.Tab.0.center" timestamp="1616571379580">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="183" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1616571379580" />
+    <state width="1237" height="183" key="GridCell.Tab.0.left" timestamp="1616571379580">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="183" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1616571379580" />
+    <state width="1237" height="183" key="GridCell.Tab.0.right" timestamp="1616571379580">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="183" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1616571379580" />
+    <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1614195088054">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1614195088054" />
+    <state width="1237" height="208" key="GridCell.Tab.1.center" timestamp="1614195088054">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1614195088054" />
+    <state width="1237" height="208" key="GridCell.Tab.1.left" timestamp="1614195088054">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1614195088054" />
+    <state width="1237" height="208" key="GridCell.Tab.1.right" timestamp="1614195088054">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1614195088054" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1616004458829">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1616004458829" />
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1616570597927">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1616570597927" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1615830538619">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1615830538619" />
+  </component>
+</project>

@@ -1,0 +1,258 @@
+{% load static %}
+{% load render_partial %}
+<!DOCTYPE html>
+<!--
+Template Name: Miraculous - Online Music Store Html Template
+Version: 1.0.0
+Author: 3mad
+Website:
+Purchase:
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Begin Head -->
+
+<head>
+    <title>Miraculous - فروش آنلاین موزیک</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Music">
+    <meta name="keywords" content="">
+    <meta name="author" content="kamleshyadav">
+    <meta name="MobileOptimized" content="320">
+    <!--Start Style -->
+    {% include "shared/HeaderRefrence.html" %}
+</head>
+<body>
+    <!----Main Wrapper Start---->
+    <div class="ms_main_wrapper ms_profile">
+        <!---Side Menu Start--->
+        <div class="ms_sidemenu_wrapper">
+            <div class="ms_nav_close">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="ms_sidemenu_inner">
+                <div class="ms_logo_inner">
+                    <div class="ms_logo">
+                        <a href="/"><img src="{% static "images/logo.png" %}" alt="" class="img-fluid"/></a>
+                    </div>
+                    <div class="ms_logo_open">
+                        <a href="/"><img src="{% static "images/open_logo.png" %}" alt="" class="img-fluid"/></a>
+                    </div>
+                </div>
+                <div class="ms_nav_wrapper">
+                    <ul>
+                        <li><a href="/"  title="Home">
+						<span class="nav_icon">
+							<span class="icon icon_discover"></span>
+						</span>
+						<span class="nav_text">
+							Home
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/Albums" title="Albums">
+						<span class="nav_icon">
+							<span class="icon icon_albums"></span>
+						</span>
+						<span class="nav_text">
+                            Albums
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/artists"  title="Artists">
+						<span class="nav_icon">
+							<span class="icon icon_artists"></span>
+						</span>
+						<span class="nav_text">
+							Artists
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/Genre" class="active" title="Genre">
+						<span class="nav_icon">
+							<span class="icon icon_genres"></span>
+						</span>
+						<span class="nav_text">
+							Genres
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/TopSong" title="TopSongs">
+						<span class="nav_icon">
+							<span class="icon icon_tracks"></span>
+						</span>
+						<span class="nav_text">
+							TopSongsا
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/offeredsong" title="dialy offered">
+						<span class="nav_icon">
+							<span class="icon icon_music"></span>
+						</span>
+						<span class="nav_text">
+							Daily Offered
+						</span>
+                        </a>
+                        </li>
+
+                        </li>
+                    </ul>
+                    <ul class="nav_downloads">
+                        <li><a href="/Downloads" title="Downloads">
+						<span class="nav_icon">
+							<span class="icon icon_download"></span>
+						</span>
+						<span class="nav_text">
+							Downloadsا
+						</span>
+                        </a>
+                        </li>
+
+                        </li>
+                        <li><a href="/Favorit" title="Favorit">
+						<span class="nav_icon">
+							<span class="icon icon_favourite"></span>
+						</span>
+						<span class="nav_text">
+							Favorit
+						</span>
+                        </a>
+                        </li>
+                        <li><a href="/History" title="History">
+						<span class="nav_icon">
+							<span class="icon icon_history"></span>
+						</span>
+						<span class="nav_text">
+							History
+						</span>
+                        </a>
+                        </li>
+                    </ul>
+                    <ul class="nav_playlist">
+                        <li><a href="/Playlist" title=Playlists">
+						<span class="nav_icon">
+							<span class="icon icon_fe_playlist"></span>
+						</span>
+                        <span class="nav_text">
+                            Playlists
+                        </span>
+                        </a>
+                        </li>
+                        <li><a href="/AddPlayList" title="CreatePlaylist">
+						<span class="nav_icon">
+							<span class="icon icon_c_playlist"></span>
+						</span>
+						<span class="nav_text">
+                            CreatePlaylist
+                        </span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---Main Content Start--->
+        <div class="padder_top80">
+            <!---Header--->
+              <div class="ms_header">
+                <div class="ms_top_left">
+                    <form action="/Search" method="get">
+                    <div class="ms_top_search">
+                        <input name="q" value="{{ request.get.q}}"  type="text" class="form-control" placeholder="Search....">
+                        <span class="search_icon">
+                            <button type="submit" class="search_icon" >search</button>
+						</span>
+                    </div>
+                    </form>
+                    <div class="ms_top_trend">
+                        <span><a href="/TopSong"  class="ms_color">آهنگ های پربازدید :</a></span> <span class="top_marquee"><a href="#">Dream your moments</a></span>
+                    </div>
+                </div>
+                {% render_partial "profiledetail" %}
+            </div>
+            <!----Upload and Share Wrapper Start---->
+            <div class="ms_upload_wrapper marger_top60">
+                <form method="post" enctype="multipart/form-data">
+
+                <div class="ms_upload_box">
+                    <h2>Choose Your File/Upload</h2>
+                    <img src="{% static "images/svg/upload.svg" %}" alt="">
+                        {% csrf_token %}
+                    <div class="ms_upload_btn">
+                        {{selected_form.SongFile}}
+                    </div><br>
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <p>{{userlist.PlayListSelect.PlayListName}}</p>
+
+                    </div><br>
+{#                    <div class="form-group">#}
+{#                                <label>Choose Photo for your Playlist</label>#}
+{#                                {{  }}#}
+{#                    </div>#}
+                    <img src="{{userplaylist.PlayListSelect.PlayListImage.url }}" style="width: 300px">
+                </div>
+                <div class=" marger_top60">
+                    <div class="ms_upload_box">
+                        <div class="ms_heading">
+                            <h1>Song Information</h1>
+                        </div>
+
+                        <div class="ms_pro_form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label>SongName</label>
+                                {{ selected_form.SongName}}
+                            </div>
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label>ArtistName</label>
+                                {{selected_form.ArtistName}}
+                            </div>
+                            {% csrf_token %}
+                            <div class="form-group">
+
+                                <label>AlbumName</label>
+                                {{selected_form.AlbumName }}
+                            </div>
+                            {% csrf_token %}
+                            <div class="form-group">
+
+                                <label>is_paid</label>
+                                {{ selected_form.is_paid}}
+                            </div>
+                            <div class="pro-form-btn text-center marger_top15">
+                                <div class="ms_upload_btn">
+                                    <button type="submit">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+
+            </div>
+            <!----Main div close---->
+        </div>
+        <!----Footer Start---->
+         {% render_partial "footerwrapper" %}
+        <!----Audio Player Section---->
+
+    </div>
+    <!----Register Modal Start---->
+    <!-- Modal -->
+
+    <!----Language Selection Modal---->
+    {% include "shared/LanguageSection.html" %}
+	<!----Queue Clear Model ---->
+	{% include "shared/ClearModel.html" %}
+	<!----Queue Save Modal---->
+	{% include "shared/Footer.html" %}
+    <!--Main js file Style-->
+   {% include "shared/HeaderRefrence.html" %}
+</html>

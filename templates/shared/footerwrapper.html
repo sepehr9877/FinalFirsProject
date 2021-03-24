@@ -1,0 +1,73 @@
+ {% load static %}
+  <div class="ms_footer_wrapper">
+            <div class="ms_footer_logo">
+                <a href="/"><img src="{% static "images/open_logo.png" %}" alt=""></a>
+            </div>
+            <div class="ms_footer_inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer_box">
+                            <h1 class="footer_title">miraculous</h1>
+                            <p>THis WebSite Has Been Developed By Sepehr Seifpour  </p>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer_box footer_app">
+                            <h1 class="footer_title">Number of Visitors</h1>
+                                {{ context_nb_vistors }}
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer_box footer_subscribe">
+                            <h1 class="footer_title">Comments</h1>
+                            <p>We Would Appreciate You If You Share Your Fascinating Ideas With Me</p>
+                                <a href="/commentspage/{{blog.id}}" class="submit ms_btn">Comments</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer_box footer_contacts">
+                            <h1 class="footer_title">{{ sitesettings.title }}</h1>
+                            <ul class="foo_con_info">
+                                <li>
+                                    <div class="foo_con_icon">
+                                        <img src="{% static "images/svg/phone.svg" %}" alt="">
+                                    </div>
+                                    <div class="foo_con_data">
+                                        <span class="con-title">My Phone</span>
+                                        <span>{{sitesettings.Phone  }}</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="foo_con_icon">
+                                        <img src="{% static "images/svg/message.svg" %}" alt="">
+                                    </div>
+                                    <div class="foo_con_data">
+                                        <span class="con-title">My Email</span>
+                                        <span>{{ sitesettings.Email }}</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="foo_con_icon">
+                                        <img src="{% static "images/svg/add.svg" %}" alt="">
+                                    </div>
+                                    <div class="foo_con_data">
+                                        <span class="con-title">Address</span>
+                                        <span>{{ sitesettings.Address }}</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----Copyright---->
+            <div class="col-lg-12">
+                <div class="ms_copyright">
+                    <div class="footer_border"></div>
+                    <p>تمامی حقوق این سایت متعلق به The Miraculous می باشد. طراحی توسط <a href="https://www.rtl-theme.com/author/3mad/">3mad</a></p>
+                </div>
+            </div>
+        </div>

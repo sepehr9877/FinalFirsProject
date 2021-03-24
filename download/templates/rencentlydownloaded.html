@@ -1,0 +1,42 @@
+<div class="ms_featured_slider">
+                <div class="ms_heading">
+                    <h1>اخیرا دانلود شده</h1>
+
+                </div>
+                    <div class="ms_feature_slider swiper-container">
+                        <div class="swiper-wrapper">
+                            {% for Song in rencently_download %}
+                            <div class="swiper-slide">
+                                <div class="ms_rcnt_box">
+                                    <div class="ms_rcnt_box_img">
+                                        <img src="{{ Song.MusicDownload.image.url }}" alt="">
+                                        <div class="ms_main_overlay">
+                                            <div class="ms_box_overlay"></div>
+                                            <div class="ms_more_icon">
+                                                <img src="images/svg/more.svg" alt="">
+                                            </div>
+                                           <ul class="more_option">
+                                    <li><a href="#"><span class="opt_icon"><span class="icon icon_fav"></span></span>علاقه مندی ها</a></li>
+                                    <li><a href="#"><span class="opt_icon"><span class="icon icon_queue"></span></span>افزودن به لیست</a></li>
+                                    <li><a href="#"><span class="opt_icon"><span class="icon icon_dwn"></span></span>دانلود</a></li>
+                                    <li><a href="#"><span class="opt_icon"><span class="icon icon_playlst"></span></span>افزودن به پلی لیست</a></li>
+                                    <li><a href="#"><span class="opt_icon"><span class="icon icon_share"></span></span>اشتراک گذاری</a></li>
+                                </ul>
+                                            <div class="ms_play_icon">
+                                                <img src="images/svg/play.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ms_rcnt_box_text">
+                                        <h3><a href="#">{{ Song.MusicDownload.title }}</a></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next1 slider_nav_next"></div>
+                    <div class="swiper-button-prev1 slider_nav_prev"></div>
+            </div>
